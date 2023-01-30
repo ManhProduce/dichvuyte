@@ -10,13 +10,17 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="left-test col-3 bg-primary">
-                left
-            </div>
-            <div class="right-test col-9 bg-danger">
-                right
-            </div>
+        <div class="header">
+            header
+        </div>
+        <div class="banner">
+            banner
+        </div>
+        <div class="body">
+            body
+        </div>
+        <div class="footer">
+            footer
         </div>
     </div>
 </body>
