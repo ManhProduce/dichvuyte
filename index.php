@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M&T medical supplies & services</title>
+    <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <!-- link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--  -->
+    <!-- link swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--  -->
     <link rel="stylesheet" href="css/index_style.css">
 </head>
 <body>
@@ -52,7 +64,7 @@
             <div class="bottom-header" id="bottom-header">
                 <div class="container">
                     <div class="mt-logo">
-                        <a href="#"><img src="images/Logo.jpg" alt=""></a>
+                        <a href="#"><img src="images/Logo.png" alt=""></a>
                     </div>
                     <div class="bottom-header-menu">
                         <ul>
@@ -66,7 +78,44 @@
             </div>
         </div>
         <div id="banner">
-            banner
+            <div class="banner-slider">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="home-banner-sec" style="background-image: url('images/banner_slide1.jpg');">
+                            <div class="container">
+                                <p class="home-banner-title">AN TOÀN & THỎA MÃN</p>
+                                <p class="home-banner-sub-title">Trong từng dịch vụ</p>
+                                <a href="#" class="more-info"><p>Tìm hiểu thêm</p><i class="fa-solid fa-caret-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-banner-sec" style="background-image: url('images/banner_slide2.jpg');">
+                            <div class="container">
+                                <p class="home-banner-title">HIỆU SUẤT & CHẤT LƯỢNG</p>
+                                <p class="home-banner-sub-title">Trong từng sản phẩm</p>
+                                <a href="#" class="more-info"><p>Tìm hiểu thêm</p><i class="fa-solid fa-caret-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+                <!-- End swiper -->
+
+            </div>
         </div>
         <div id="body">
             body
@@ -75,6 +124,7 @@
             footer
         </div>
     </div>
+    <!-- script scroll down header -->
     <script>
         window.onscroll = function() {myFunction()};
 
@@ -94,5 +144,30 @@
             }
         }
     </script>
+    <!-- END -->
+    <!-- swiper banner -->
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            speed: 700,
+        // Optional parameters
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+    <!-- END -->
 </body>
 </html>
