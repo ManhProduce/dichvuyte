@@ -1,8 +1,16 @@
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
+.container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* top header */
 .top-header {
     background-color: #1E3461;
     padding: 10px 0;
@@ -11,11 +19,7 @@
 }
 .top-header .container {
     display: flex;
-    max-width: 100%;
-    width: 1200px;
-    margin: auto;
     height: 25px;
-    padding: 0 15px;
     font-size: 14px;
     justify-content: space-between;
     /* align-items: center; */
@@ -89,4 +93,64 @@
 }
 .nav-dropdown-item:hover >a{
     color: #1886EB;
+}
+/* bottom header */
+.bottom-header {
+    background-color: #FFF;
+    display: flex;
+    height: 80px;
+    box-shadow: 1px 6px 16px rgb(230, 230, 230);
+    z-index: 999;
+}
+.bottom-header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -80px);
+}
+.header-scrolldown {
+    transform: translate(0, 0);
+    transition: all 1s ease-out;
+}
+.bottom-header .container {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+.mt-logo {
+    padding: 15px 0;
+    height: 80px;
+}
+.mt-logo img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.bottom-header-menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+.bottom-header-menu ul li {
+    font-weight: 500;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 550;
+    padding: 30px 15px;
+    font-size: 16px;
+}
+.bottom-header-menu ul li:hover {
+    color: #4FCAFC;
+}
+.bottom-header-menu ul li >p {
+    margin: 0;
+}
+/* body */
+#body {
+    height: 1200px;
+    background-color: #dddddd;
 }

@@ -49,6 +49,21 @@
                     </ul>
                 </div>
             </div>
+            <div class="bottom-header" id="bottom-header">
+                <div class="container">
+                    <div class="mt-logo">
+                        <a href="#"><img src="images/Logo.jpg" alt=""></a>
+                    </div>
+                    <div class="bottom-header-menu">
+                        <ul>
+                            <li><p>Dịch vụ y tế</p></li>
+                            <li><p>Vật tư y tế</p></li>
+                            <li><p>Tin tức</p></li>
+                            <li><p>Liên hệ</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="banner">
             banner
@@ -60,5 +75,24 @@
             footer
         </div>
     </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("bottom-header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("bottom-header-sticky");
+            } else {
+                header.classList.remove("bottom-header-sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                header.classList.add("header-scrolldown");
+            } else {
+                header.classList.remove("header-scrolldown");
+            }
+        }
+    </script>
 </body>
 </html>
