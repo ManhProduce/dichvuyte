@@ -154,6 +154,9 @@ body{
     height: auto;
     /* border: 0; */
 }
+.swiper-wrapper {
+    position: relative;
+}
 .swiper-container {
     position: relative;
 }
@@ -179,6 +182,14 @@ body{
     from {left: -100px;}
     to {left: 0px;}
   }
+  @keyframes movleft {
+      from {right: -100px;}
+      to {right: 0px;}
+    }
+    @keyframes movup {
+        from {bottom: -100px;}
+        to {bottom: 0px;}
+      }
 .home-banner-sec .container .home-banner-sub-title {
     position: relative;
     padding-left: 15px;
@@ -206,12 +217,13 @@ body{
     padding-left: 15px;
     font-size: 18px;
     font-weight: 500;
+    /* transition: 0.4s linear; */
     /* animation delay */
     animation: movright 1s forwards;
     animation-delay: 0.1s;
 }
 .home-banner-sec .container .more-info:hover {
-    background-position-x: -1px;
+    /* background-position-x: 100%; */
 }
 .home-banner-sec .container .more-info >p {
     margin: 0;
@@ -219,8 +231,65 @@ body{
 .swiper-pagination {
     bottom: 25% !important;
 }
-.swiper-scrollbar {
+/* .swiper-scrollbar {
     bottom: 23% !important;
+} */
+.why-choose-us {
+    /* -webkit-backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
+    padding: 40px 0;
+}
+.reasons-wrap-list {
+    display: flex;
+}
+.reasons-wrap-item {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    width: 25%;
+    /* line-height: 1.4; */
+    margin: auto;
+    align-items: center;
+}
+.reasons-wrap-item1 {
+    animation: movleft 1s forwards;
+    animation-delay: 0.05s;
+}
+.reasons-wrap-item2 {
+    animation: movleft 1s forwards;
+    animation-delay: 0.1s;
+}
+.reasons-wrap-item3 {
+    animation: movleft 1s forwards;
+    animation-delay: 0.15s;
+}
+.reasons-wrap-item4 {
+    animation: movleft 1s forwards;
+    animation-delay: 0.2s;
+}
+.reasons-wrap-item-icon {
+    color: #105BAA;
+    text-align: center;
+    font-size: 50px;
+    margin-right: 15px;
+}
+.reasons-wrap-item-tittle {
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.reasons-wrap-item-tittle >p {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
 }
 /* body */
 #body {

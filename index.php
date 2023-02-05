@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="home-banner-sec" style="background-image: url('images/banner_slide2.jpg');">
+                        <div class="home-banner-sec" style="background-image: url('images/banner_slide3.jpg');">
                             <div class="container">
                                 <p class="home-banner-title">HIỆU SUẤT & CHẤT LƯỢNG</p>
                                 <p class="home-banner-sub-title">Trong từng sản phẩm</p>
@@ -103,6 +103,46 @@
                         </div>
                     </div>
                 </div>
+                <div class="why-choose-us">
+                        <div class="container">
+                            <div class="reasons-wrap">
+                                <div class="reasons-wrap-list">
+                                    <div class="reasons-wrap-item reasons-wrap-item1">
+                                        <div class="reasons-wrap-item-icon">
+                                            <i class="fa-solid fa-book"></i>
+                                        </div>
+                                        <div class="reasons-wrap-item-tittle">
+                                            <P>ĐẦY ĐỦ </br>CHỦNG LOẠI</P>
+                                        </div>
+                                    </div>
+                                    <div class="reasons-wrap-item reasons-wrap-item2">
+                                        <div class="reasons-wrap-item-icon">
+                                            <i class="fa-solid fa-money-check"></i>
+                                        </div>
+                                        <div class="reasons-wrap-item-tittle">
+                                            <P>GIÁ CẢ </br>HỢP LÍ</P>
+                                        </div>
+                                    </div>
+                                    <div class="reasons-wrap-item reasons-wrap-item3">
+                                        <div class="reasons-wrap-item-icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="reasons-wrap-item-tittle">
+                                            <P>TIÊU CHUẨN </br>QUỐC TẾ</P>
+                                        </div>
+                                    </div>
+                                    <div class="reasons-wrap-item reasons-wrap-item4">
+                                        <div class="reasons-wrap-item-icon">
+                                            <i class="fa-solid fa-truck"></i>
+                                        </div>
+                                        <div class="reasons-wrap-item-tittle">
+                                            <P>GIAO HÀNH </br>NHANH CHÓNG</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
     
