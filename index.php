@@ -68,7 +68,9 @@
                     </div>
                     <div class="bottom-header-menu">
                         <ul>
-                            <li><p>Dịch vụ y tế</p></li>
+                            <li>
+                                <a href="giaodiendichvu/services.php"><p>Dịch vụ y tế</p></a>
+                            </li>
                             <li><p>Vật tư y tế</p></li>
                             <li><p>Tin tức</p></li>
                             <li><p>Liên hệ</p></li>
