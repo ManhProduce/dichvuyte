@@ -140,14 +140,17 @@ body{
     line-height: 1.4;
 }
 .bottom-header-menu ul li {
-    font-weight: 500;
     margin-right: 10px;
     text-align: center;
-    font-weight: 550;
     padding: 30px 15px;
-    font-size: 16px;
 }
-.bottom-header-menu ul li:hover {
+.bottom-header-menu ul li >a {
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    color: #000;
+}
+.bottom-header-menu ul li:hover a {
     color: #4FCAFC;
 }
 .bottom-header-menu ul li >p {

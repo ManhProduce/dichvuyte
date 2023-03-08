@@ -71,9 +71,15 @@
                             <li>
                                 <a href="giaodiendichvu/services.php"><p>Dịch vụ y tế</p></a>
                             </li>
-                            <li><p>Vật tư y tế</p></li>
-                            <li><p>Tin tức</p></li>
-                            <li><p>Liên hệ</p></li>
+                            <li>
+                                <a href="giaodienvattu/supplies.php"><p>Vật tư y tế</p></a>
+                            </li>
+                            <li>
+                                <a href="#"><p>Tin tức</p></a>
+                            </li>
+                            <li>
+                                <a href="#"><p>Liên hệ</p></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
