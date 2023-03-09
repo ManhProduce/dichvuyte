@@ -72,7 +72,7 @@
                             <li>Polyglactin 910</li>
                         </ul>
                     </div>
-                    <div class="column cl-right">
+                    <div class="column cl-middle">
                         <p style="color: #bf2922;">
                             <strong>Chỉ không tiêu</strong>
                         </p>
@@ -83,6 +83,24 @@
                             <li>Polyester</li>
                         </ul>
                     </div>
+                    <div class="column cl-right">
+                        <p style="color: #bf2922;">
+                            <strong>Thiết bị y tế</strong>
+                        </p>
+                        <ul class="mona-nav-3">
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                            <li>Polyglactin 910</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,7 +108,102 @@
     <!-- END -->
     <!-- START product -->
     <div class="home-supplies-product sec">
-        
+        <div class="container">
+            <div class="columns">
+                <div class="column supplies-product-left">
+                    <div class="supplies-pd-menu">
+                        <p class="supplies-pd-menu-title">DANH MỤC</p>
+                        <ul class="supplies-pd-menu-nav" id="supplies-pd-menu-nav">
+                            <li class="supplies-pd-menu-item active">
+                                <a href="#cate-2">
+                                    <span class="title">Chỉ tự tiêu</span>
+                                </a>
+                            </li>
+                            <li class="supplies-pd-menu-item ">
+                                <a href="#cate-3">
+                                    <span class="title">Chỉ không tiêu</span>
+                                </a>
+                            </li>
+                            <li class="supplies-pd-menu-item ">
+                                <a href="#cate-4">
+                                    <span class="title">Thiết bị y tế</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column supplies-product-right">
+                    <section id="cate-2" class="pd-cate">
+                        <h3 class="main-title-2 hl-color">Chỉ tự tiêu</h3>
+                        <div class="text-wrap"> Chỉ phẫu thuật tự tiêu (absorbable sutures) là loại chỉ sau một thời gian trong cơ thể sẽ bị phân hủy bởi quá trình thủy phân (chỉ tổng hợp: PGLA, PGA, PDO, PCL…) hoặc bởi tác động của enzyme (chỉ tự nhiên hoặc chỉ sinh học: Catgut, Collagen). Chỉ khâu tự tiêu có khả năng…</div>
+                        <div class="pd-wrap">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="pd-item">
+                                        <div class="pd-img">
+                                            <a href="">
+                                                <img src="../images/Han_so_hee.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="pd-title need-color">
+                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
+                                        </p>
+                                        <div class="pd-info">
+                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="pd-item">
+                                        <div class="pd-img">
+                                            <a href="">
+                                                <img src="../images/Han_so_hee.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="pd-title need-color">
+                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
+                                        </p>
+                                        <div class="pd-info">
+                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="pd-item">
+                                        <div class="pd-img">
+                                            <a href="">
+                                                <img src="../images/Han_so_hee.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="pd-title need-color">
+                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
+                                        </p>
+                                        <div class="pd-info">
+                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="pd-item">
+                                        <div class="pd-img">
+                                            <a href="">
+                                                <img src="../images/Han_so_hee.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="pd-title need-color">
+                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
+                                        </p>
+                                        <div class="pd-info">
+                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- END -->
 
@@ -99,5 +212,40 @@
         
     </div>
     <!-- END -->
+
+    <!-- active when on screen -->
+    <script>
+        const active = document.querySelector('.supplies-pd-menu-item');
+
+        animation_up.classList.remove('active');
+            const observer2 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animation_right.classList.add('active');
+                return;
+                }
+            });
+            });
+
+        observer.observe(document.getElementById('supplies-pd-menu-nav'));
+    </script>
+    <!-- END -->
+
+    <!-- random color for nav item -->
+    <script>
+        function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+
+        var elements = document.getElementsByClassName("need-color");
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = getRandomColor();
+        }
+    </script>
 </body>
 </html>
