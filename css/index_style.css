@@ -8,6 +8,17 @@ body{
     font-family: "SF Pro Text", sans-serif;
     font-size: 16px;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+a:hover {
+    color: #4FCAFC
+}
+ol,ul {
+    list-style-type: none;
+}
 .container {
     width: 1200px;
     max-width: 100%;
@@ -625,7 +636,6 @@ body{
 }
 .oem-sec-bottom .container {
     width: 1920px;
-    margin: 0;
     padding: 0;
 }
 .oem-sec-bottom .column-left {
@@ -728,12 +738,12 @@ body{
     -webkit-transition: 0.4s linear;
     transition: 0.4s linear;
     border-radius: 4px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#1886EB), color-stop(#4fcafc), color-stop(#fff), to(#fff));
+    /* background-image: -webkit-gradient(linear, left top, right top, from(#1886EB), color-stop(#4fcafc), color-stop(#fff), to(#fff)); */
     background-image: linear-gradient(to right, #1886EB, #4fcafc, #fff, #fff);
     background-size: 300%;
     background-position-x: 100%;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
+    /* display: -webkit-inline-box;
+    display: -ms-inline-flexbox; */
     display: inline-flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -753,9 +763,29 @@ body{
     color: #fff;
     padding: 75px 0;
 }
+.ft-nav {
+    column-count: 2;
+    column-gap: 30px;
+}
 .ft-column-1 {
     width: 35%;
     display: flex;
     flex-wrap: wrap;
-
+}
+.ft-logo {
+    width: 35%;
+    padding-right: 30px;
+    align-items: center;
+}
+.logo-bottom-1 {
+    width: 65%;
+}
+.ft-column-2 {
+    width: 35%;
+}
+.ft-nav a {
+    transition: 0.2s;
+}
+.ft-nav li {
+    margin-bottom: 15px;
 }
