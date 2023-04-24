@@ -22,7 +22,15 @@
         }
         elseif($tam=='qldanhmucdv' && $query=='sua'){
             include("modules/qldanhmucdv/sua.php");
-        }else{
+        }
+        elseif($tam=='qlsp' && $query=='them'){
+            include("modules/qlsp/them.php");
+            include("modules/qlsp/lietke.php");
+        }
+        elseif($tam=='qlsp' && $query=='sua'){
+            include("modules/qlsp/sua.php");
+        }
+        else{
             include("modules/dashboard.php");
         }
     ?>
