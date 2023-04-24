@@ -1,6 +1,15 @@
 <?php
-    $sql_sua_sp = "SELECT * FROM tb_product WHERE id_pd = '$_GET[idsuasp]'";
-    $row_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
+    $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+    mysqli_set_charset($conn,'utf8');
+
+    $db = new connection();
+    $db->connect($conn); 
+    if($db->connect($conn)){
+        $sql_sua_sp = "SELECT * FROM tb_product WHERE id_pd = '$_GET[idsuasp]'";
+        $row_sua_sp = mysqli_query($conn, $sql_sua_sp);
+    }else{
+        return 0;
+    }
 ?>
 
 <p>Sửa sản phẩm</p>
@@ -50,23 +59,32 @@
             <td>
                 <select name="danhmucsp" id="">
                     <?php
-                        $sql_danhmuc = "SELECT * FROM tb_category ORDER BY id_category_pd DESC";
-                        $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
-                        while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
-                            if($row_danhmuc['id_category_pd']==$row['id_category_pd']){
+                        // $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+                        // mysqli_set_charset($conn,'utf8');
+                    
+                        // $db = new connection();
+                        // $db->connect($conn); 
+                        // if($db->connect($conn)){
+                            $sql_danhmuc = "SELECT * FROM tb_category ORDER BY id_category_pd DESC";
+                            $query_danhmuc = mysqli_query($conn, $sql_danhmuc);
+                            while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
+                                if($row_danhmuc['id_category_pd']==$row['id_category_pd']){
 
-                            
-                            ?>
-                            <option selected value="<?php echo $row_danhmuc['id_category_pd'] ?>"><?php echo $row_danhmuc['name_category'] ?></option>
+                                
+                                ?>
+                                <option selected value="<?php echo $row_danhmuc['id_category_pd'] ?>"><?php echo $row_danhmuc['name_category'] ?></option>
 
-                            <?php
-                            }else{
-                            ?>
-                            <option  value="<?php echo $row_danhmuc['id_category_pd'] ?>"><?php echo $row_danhmuc['name_category'] ?></option>
-                            
-                            <?php
+                                <?php
+                                }else{
+                                ?>
+                                <option  value="<?php echo $row_danhmuc['id_category_pd'] ?>"><?php echo $row_danhmuc['name_category'] ?></option>
+                                
+                                <?php
+                                }
                             }
-                        }
+                        // }else{
+                        //     return 0;
+                        // }
                         
                     ?>
                 </select>

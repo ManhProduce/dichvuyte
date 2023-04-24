@@ -1,10 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/index_style.css">
+
     <title>Supplies</title>
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!--  -->
     <link rel="stylesheet" href="../css/home_supplies.css">
 </head>
@@ -115,20 +125,15 @@
                         <p class="supplies-pd-menu-title">DANH MỤC</p>
                         <ul class="supplies-pd-menu-nav" id="supplies-pd-menu-nav">
                             <li class="supplies-pd-menu-item active">
-                                <a href="#cate-2">
-                                    <span class="title">Chỉ tự tiêu</span>
+                                <a href="/mtmedicalservices/pages/supplies.php">
+                                    <span class="title">Tất cả</span>
                                 </a>
                             </li>
-                            <li class="supplies-pd-menu-item ">
-                                <a href="#cate-3">
-                                    <span class="title">Chỉ không tiêu</span>
-                                </a>
-                            </li>
-                            <li class="supplies-pd-menu-item ">
-                                <a href="#cate-4">
-                                    <span class="title">Thiết bị y tế</span>
-                                </a>
-                            </li>
+                            <?php
+                                include_once('../models/m_supplies.php');
+                                $p = new supplies();
+                                $p->load_category_pd();
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -138,66 +143,19 @@
                         <div class="text-wrap"> Chỉ phẫu thuật tự tiêu (absorbable sutures) là loại chỉ sau một thời gian trong cơ thể sẽ bị phân hủy bởi quá trình thủy phân (chỉ tổng hợp: PGLA, PGA, PDO, PCL…) hoặc bởi tác động của enzyme (chỉ tự nhiên hoặc chỉ sinh học: Catgut, Collagen). Chỉ khâu tự tiêu có khả năng…</div>
                         <div class="pd-wrap">
                             <div class="columns">
-                                <div class="column">
-                                    <div class="pd-item">
-                                        <div class="pd-img">
-                                            <a href="">
-                                                <img src="../images/Han_so_hee.png" alt="">
-                                            </a>
-                                        </div>
-                                        <p class="pd-title need-color">
-                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
-                                        </p>
-                                        <div class="pd-info">
-                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="pd-item">
-                                        <div class="pd-img">
-                                            <a href="">
-                                                <img src="../images/Han_so_hee.png" alt="">
-                                            </a>
-                                        </div>
-                                        <p class="pd-title need-color">
-                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
-                                        </p>
-                                        <div class="pd-info">
-                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="pd-item">
-                                        <div class="pd-img">
-                                            <a href="">
-                                                <img src="../images/Han_so_hee.png" alt="">
-                                            </a>
-                                        </div>
-                                        <p class="pd-title need-color">
-                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
-                                        </p>
-                                        <div class="pd-info">
-                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="pd-item">
-                                        <div class="pd-img">
-                                            <a href="">
-                                                <img src="../images/Han_so_hee.png" alt="">
-                                            </a>
-                                        </div>
-                                        <p class="pd-title need-color">
-                                            <a href="#">CARELON® NYLON - POLYAMIDE</a>
-                                        </p>
-                                        <div class="pd-info">
-                                            <div class="pd-desc">Đơn sợi, làm từ polyamide 6/6.6, khâu các vết thương bên ngoài (khâu da), phẫu thuật thẩm mỹ; khâu, nối các mô mềm bao gồm phẫu thuật mắt, vi phẫu, ngoại thần kinh.</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php
+
+                                if(isset($_REQUEST['idcate'])){
+                                    $idcate = $_REQUEST['idcate'];
+                                    include_once('../models/m_supplies.php');
+                                    $p = new supplies();
+                                    $p->fil_pd($idcate);
+                                }else{
+                                    include_once('../models/m_supplies.php');
+                                    $p = new supplies();
+                                    $p->load_pd();
+                                }
+                                ?>
                             </div>
                         </div>
                     </section>
@@ -211,6 +169,10 @@
     <div class="home-supplies-intro-sec-2 sec">
         
     </div>
+
+    <!-- <?php
+        include("footer.php");
+    ?> -->
     <!-- END -->
 
     <!-- active when on screen -->

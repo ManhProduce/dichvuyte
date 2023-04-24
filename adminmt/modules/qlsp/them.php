@@ -15,7 +15,7 @@
         </tr>
         <tr>
             <td>Số lượng:</td>
-            <td><input type="text" name="slsp"></td>
+            <td><input type="text" name="slsp" value=""></td>
         </tr>
         <tr>
             <td>Hình ảnh:</td>
@@ -34,13 +34,23 @@
             <td>
                 <select name="danhmucsp" id="">
                     <?php
-                        $sql_danhmuc = "SELECT * FROM tb_category ORDER BY id_category_pd DESC";
-                        $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
-                        while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
-                            ?>
-                            <option value="<?php echo $row_danhmuc['id_category_pd'] ?>"><?php echo $row_danhmuc['name_category'] ?></option>
+                        // include("../../config/connect.php");
+                        $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+                        mysqli_set_charset($conn,'utf8');
 
-                            <?php
+                        $db = new connection();
+                        $db->connect($conn); 
+                        if($db->connect($conn)){
+                            $sql_danhmuc = "SELECT * FROM tb_category ORDER BY id_category_pd DESC";
+                            $query_danhmuc = mysqli_query($conn, $sql_danhmuc);
+                            while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
+                                ?>
+                                <option value="<?php echo $row_danhmuc['id_category_pd'] ?>"><?php echo $row_danhmuc['name_category'] ?></option>
+
+                                <?php
+                            }
+                        }else{
+                            return 0;
                         }
                         
                     ?>

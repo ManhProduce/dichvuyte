@@ -1,6 +1,16 @@
 <?php
-    $sql_sua_danhmucdv = "SELECT * FROM tb_category_sv WHERE id_category_sv = '$_GET[idsuadanhmucdv]'";
-    $row_sua_danhmucdv = mysqli_query($mysqli, $sql_sua_danhmucdv);
+    $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+    mysqli_set_charset($conn,'utf8');
+
+    $db = new connection();
+    $db->connect($conn); 
+    if($db->connect($conn)){
+        $sql_sua_danhmucdv = "SELECT * FROM tb_category_sv WHERE id_category_sv = '$_GET[idsuadanhmucdv]'";
+        $row_sua_danhmucdv = mysqli_query($conn, $sql_sua_danhmucdv);
+    }else{
+        return 0;
+    }
+    
 ?>
 
 <p>Sửa danh mục dịch vụ</p>

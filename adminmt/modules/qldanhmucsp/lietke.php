@@ -1,6 +1,17 @@
 <?php
-    $sql_lietke_danhmucsp = "SELECT * FROM tb_category ORDER BY order_category DESC";
-    $row_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
+    $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+    mysqli_set_charset($conn,'utf8');
+
+    $db = new connection();
+    $db->connect($conn); 
+    if($db->connect($conn)){
+        $sql_lietke_danhmucsp = "SELECT * FROM tb_category ORDER BY order_category DESC";
+        $row_lietke_danhmucsp = mysqli_query($conn, $sql_lietke_danhmucsp);
+    }else{
+        return 0;
+    }
+
+    
 ?>
 
 <p>Liệt kê danh mục sản phẩm</p>

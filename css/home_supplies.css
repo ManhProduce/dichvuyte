@@ -217,6 +217,7 @@ strong, b, .bold {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
+    padding: 0 !important;
 }
 .supplies-pd-menu-nav li {
     border-bottom: 1px solid #e2e2e2;

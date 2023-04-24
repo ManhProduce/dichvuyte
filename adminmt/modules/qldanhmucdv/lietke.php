@@ -1,6 +1,16 @@
 <?php
-    $sql_lietke_danhmucdv = "SELECT * FROM tb_category_sv ORDER BY order_category_sv DESC";
-    $row_lietke_danhmucdv = mysqli_query($mysqli, $sql_lietke_danhmucdv);
+    $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+    mysqli_set_charset($conn,'utf8');
+
+    $db = new connection();
+    $db->connect($conn); 
+    if($db->connect($conn)){
+        $sql_lietke_danhmucdv = "SELECT * FROM tb_category_sv ORDER BY order_category_sv DESC";
+        $row_lietke_danhmucdv = mysqli_query($conn, $sql_lietke_danhmucdv);
+    }else{
+        return 0;
+    }
+    
 ?>
 
 <p>Liệt kê danh mục dịch vụ</p>

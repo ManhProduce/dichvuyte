@@ -1,6 +1,17 @@
 <?php
-    $sql_sua_danhmucsp = "SELECT * FROM tb_category WHERE id_category_pd = '$_GET[idsuadanhmucsp]'";
-    $row_sua_danhmucsp = mysqli_query($mysqli, $sql_sua_danhmucsp);
+
+    $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+    mysqli_set_charset($conn,'utf8');
+
+    $db = new connection();
+    $db->connect($conn); 
+    if($db->connect($conn)){
+        $sql_sua_danhmucsp = "SELECT * FROM tb_category WHERE id_category_pd = '$_GET[idsuadanhmucsp]'";
+        $row_sua_danhmucsp = mysqli_query($conn, $sql_sua_danhmucsp);
+    }else{
+        return 0;
+    }
+    
 ?>
 
 <p>Sửa danh mục sản phẩm</p>

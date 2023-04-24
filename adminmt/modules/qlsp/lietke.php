@@ -1,6 +1,16 @@
 <?php
-    $sql_lietke_sp = "SELECT * FROM tb_product, tb_category WHERE tb_product.id_category_pd = tb_category.id_category_pd ORDER BY id_pd DESC";
-    $row_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
+    $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+    mysqli_set_charset($conn,'utf8');
+
+    $db = new connection();
+    $db->connect($conn); 
+    if($db->connect($conn)){
+        $sql_lietke_sp = "SELECT * FROM tb_product, tb_category WHERE tb_product.id_category_pd = tb_category.id_category_pd ORDER BY id_pd DESC";
+        $row_lietke_sp = mysqli_query($conn, $sql_lietke_sp);
+    }else{
+        return 0;
+    }
+    
 ?>
 
 <p>Liệt kê sản phẩm</p>

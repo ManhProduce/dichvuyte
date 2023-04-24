@@ -43,10 +43,10 @@
                     <div class="bottom-header-menu">
                         <ul>
                             <li>
-                                <a href="giaodiendichvu/services.php"><p>Dịch vụ y tế</p></a>
+                                <a href="pages/services.php"><p>Dịch vụ y tế</p></a>
                             </li>
                             <li>
-                                <a href="giaodienvattu/supplies.php"><p>Vật tư y tế</p></a>
+                                <a href="pages/supplies.php"><p>Vật tư y tế</p></a>
                             </li>
                             <li>
                                 <a href="#"><p>Tin tức</p></a>
