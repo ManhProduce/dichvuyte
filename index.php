@@ -22,10 +22,17 @@
 <body>
     <div class="wrapper">
         <?php
-            include("pages/header.php");
-            include("pages/banner.php");
-            include("pages/body.php");
-            include("pages/footer.php");
+            
+
+            // if(isset($_GET['giohang'])){
+
+            //     include_once("pages/cart.php");
+            // }else{
+            // }
+            include_once("components/header.php");
+            include_once("components/banner.php");
+            include_once("components/body.php");
+            include_once("components/footer.php");
         ?>
     </div>
     <script src="js/index.js"></script>

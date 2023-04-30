@@ -19,14 +19,28 @@
 <body>
     <h3 class="title_admin">Welcome AdminMT</h3>
     <div class="container">
+
+    
     <?php
         include("config/connect.php");
         include("modules/header.php");
         include("modules/menu.php");
         include("modules/body.php");
         include("modules/footer.php");
+
+        
     ?>
 
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+	<script>
+		// CKEDITOR.replace('thongtinlienhe');
+        CKEDITOR.replace('tomtatsp');
+        CKEDITOR.replace('motasp');
+        CKEDITOR.replace('motadv');
+    </script>
 </body>
 </html>

@@ -18,6 +18,9 @@
 
 </head>
 <body>
+    <?php
+        include_once("header.php");
+    ?>
     <div class="services-home-banner" style="background-image: url(../images/banner_services.jpg);">
         <div class="container">
             <div class="home-services-banner-title">
@@ -150,5 +153,8 @@
             </div>
         </div>
     </div>
+    <?php
+        include_once("footer.php");
+    ?>
 </body>
 </html>

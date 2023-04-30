@@ -38,21 +38,21 @@
             <div class="bottom-header" id="bottom-header">
                 <div class="container">
                     <div class="mt-logo">
-                        <a href="#"><img src="../images/Logo.png" alt=""></a>
+                        <a href="#"><img src="images/Logo.png" alt=""></a>
                     </div>
                     <div class="bottom-header-menu">
                         <ul>
                             <li>
-                                <a href="services.php"><p>Dịch vụ y tế</p></a>
+                                <a href="pages/services.php"><p>Dịch vụ y tế</p></a>
                             </li>
                             <li>
-                                <a href="supplies.php"><p>Vật tư y tế</p></a>
+                                <a href="pages/supplies.php"><p>Vật tư y tế</p></a>
                             </li>
                             <li>
                                 <a href="#"><p>Tin tức</p></a>
                             </li>
                             <li>
-                                <a href="cart.php"><p>Giỏ hàng</p></a>
+                                <a href="pages/cart.php"><p>Giỏ hàng</p></a>
                             </li>
                             <li>
                                 <a href="#"><p>Liên hệ</p></a>

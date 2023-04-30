@@ -1,0 +1,32 @@
+.main_cart {
+    margin: 50px 0;
+}
+.cart_title {
+    font-weight: 500;
+    color: #1886EB;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th {
+    color: #888;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.total_cost {
+    font-weight: 600;
+    color: #ee4d2d;
+}

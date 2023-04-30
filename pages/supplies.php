@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="../css/home_supplies.css">
 </head>
 <body>
+    <?php
+        include_once("header.php");
+    ?>
     <!-- START banner -->
     <div class="supplies-home-banner" style="background-image: url(../images/banner_supplies.jpg);">
         <div class="container">
@@ -170,9 +173,9 @@
         
     </div>
 
-    <!-- <?php
-        include("footer.php");
-    ?> -->
+    <?php
+        include_once("footer.php");
+    ?>
     <!-- END -->
 
     <!-- active when on screen -->
