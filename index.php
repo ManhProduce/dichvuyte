@@ -42,7 +42,6 @@
             // }
             // echo $_SESSION['logincus'];
             include_once("components/header.php");
-            echo 'PHP version: ' . phpversion();
 
 
             include_once("components/banner.php");
