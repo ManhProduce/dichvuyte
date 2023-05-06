@@ -21,7 +21,7 @@
                 $_SESSION['logincus'] = $email;
                 $_SESSION['rolecus'] = $role;
                 $_SESSION['namecus'] = $tenKH;
-                $_SESSION['idcus'] = mysqli_insert_id($conn);
+                // $_SESSION['idcus'] = mysqli_insert_id($conn);
                 
                 // echo'<script type="text/javascript">
                 //         alert("Đăng ký thành công !!!");

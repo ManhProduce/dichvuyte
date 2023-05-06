@@ -34,6 +34,7 @@
                 $_SESSION['logincus'] = $tk;
                 $_SESSION['rolecus'] = $r1['role'];
                 $_SESSION['namecus'] = $r1['name_cus'];
+                $_SESSION['idcus'] = $r1['id'];
                 if($_SESSION['rolecus']=='KH'){
                     header("Location: ../index.php");
                 }

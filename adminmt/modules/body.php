@@ -48,6 +48,12 @@
             elseif($tam=='qldv' && $query=='sua'){
                 include("modules/qldv/sua.php");
             }
+            elseif($tam=='qldh' && $query=='lietke'){
+                include("modules/qldonhang/lietke.php");
+            }
+            elseif($tam=='donhang' && $query=='xem'){
+                include("modules/qldonhang/xem.php");
+            }
             else{
                 include("modules/dashboard.php");
             }
