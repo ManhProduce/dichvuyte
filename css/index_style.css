@@ -88,8 +88,8 @@ ol,ul {
 }
 .nav-dropdown-menu {
     background-color: #FFF;
-    width: 120px;
-    padding: 10px;
+    width: auto;
+    padding: 15px;
     font-weight: 550;
     box-shadow: 2px 2px 2px #CCC;
     border-radius: 5px;

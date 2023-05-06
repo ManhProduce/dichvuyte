@@ -61,7 +61,11 @@
                 <td><?php echo $cart_item['tensp'] ?></td>
                 <td><img style="width:200px;" src="../adminmt/modules/qlsp/uploads/<?php echo $cart_item['hinhanhsp'] ?>" alt=""></td>
                 <td>
+
+                    <a href="addCart.php?tru=<?php echo $cart_item['id'] ?>" style="margin-right:10px;"><i class="fa-solid fa-minus"></i></a>
                     <?php echo $cart_item['soluong'] ?>
+                    <a href="addCart.php?cong=<?php echo $cart_item['id'] ?>" style="margin-left:10px;"><i class="fa-solid fa-plus"></i></a>
+
                 </td>    
                 <td><?php echo $cart_item['giasp'] ?> $</td>
                 <td><a href="addCart.php?xoaspgh=<?php echo $cart_item['id'] ?>">Xóa</a></td>
@@ -74,6 +78,16 @@
                     <td colspan="7">
                         <p style="float:left" class="total_cost">Tổng tiền: <?php echo $tongtien ?> $</p>
                         <p style="float:right" class="total_cost"><a href="addCart.php?xoaall=1">Xóa tất cả</a></p>
+
+                        <div style="clear:both"></div>
+                        <?php
+                            if(isset($_SESSION['logincus'])){
+                                echo'<p style="text-align:center;"><a href="payment.php">Đặt hàng</a></p>';
+                            }else{
+                                echo'<p style="color:red;text-align:center;text-decoration: underline;font-weight: bold;">Đăng nhập để đặt hàng !!!</p>';
+                            }
+                        ?>
+                        
                     </td>
                 </tr>
                         <?php

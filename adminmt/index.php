@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['login'])){
+        header("Location: login.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +24,16 @@
 
 </head>
 <body>
-    <h3 class="title_admin">Welcome AdminMT</h3>
+    <?php
+        if(isset($_SESSION['login'])){
+
+        
+    ?>
+    <h3 class="title_admin">Welcome <?php echo $_SESSION['login'] ?></h3>
     <div class="container">
+    <?php
+        }
+    ?>
 
     
     <?php

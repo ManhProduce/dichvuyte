@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    // if(!isset($_SESSION['logincus'])){
+    //     header("Location: login.php");
+    // }
+
+    if(isset($_GET['logout'])&&$_GET['logout'] ==1){
+        unset($_SESSION['logincus']);
+        header("Location: index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +40,7 @@
             //     include_once("pages/cart.php");
             // }else{
             // }
+            // echo $_SESSION['logincus'];
             include_once("components/header.php");
             include_once("components/banner.php");
             include_once("components/body.php");

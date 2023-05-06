@@ -1,3 +1,6 @@
+<?php
+    
+?>
 <div id="header">
             <div class="top-header">
                 <div class="container">
@@ -18,18 +21,37 @@
                         <ul class="social-nav-item nav-dropdown">
                             <a href="#" class="social-nav-item-link"><i class="fa-sharp fa-solid fa-caret-down"></i></a>
                             <div class="nav-dropdown-menu">
-                                <li class="nav-dropdown-item">
-                                    <a href="#" class="social-nav-item-link">
-                                        <i class="fa-solid fa-right-to-bracket"></i>
-                                        Log in
-                                    </a>
-                                </li>
-                                <li class="nav-dropdown-item">
-                                    <a href="#" class="social-nav-item-link">
-                                        <i class="fa-solid fa-right-from-bracket"></i>
-                                        Log out
-                                    </a>
-                                </li>
+                                <?php
+                                    if(isset($_SESSION['logincus'])&&isset($_SESSION['rolecus'])&&isset($_SESSION['namecus'])){
+                                        $name = $_SESSION['namecus'];
+                                        echo'<li class="nav-dropdown-item">
+                                                <a href="" class="social-nav-item-link">
+                                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                                    '.$name.'
+                                                </a>
+                                            </li>
+                                            <li class="nav-dropdown-item">
+                                                <a href="index.php?logout=1" class="social-nav-item-link">
+                                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                                    Đăng xuất   
+                                                </a>
+                                            </li>';
+                                    }else{
+                                        echo'<li class="nav-dropdown-item">
+                                                <a href="adminmt/login.php" class="social-nav-item-link">
+                                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                                    Đăng nhập
+                                                </a>
+                                            </li>
+                                            <li class="nav-dropdown-item">
+                                                <a href="pages/register.php" class="social-nav-item-link">
+                                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>';
+                                    }
+                                ?>
+                                
                             </div>
                         </ul>
                     </ul>
@@ -38,7 +60,7 @@
             <div class="bottom-header" id="bottom-header">
                 <div class="container">
                     <div class="mt-logo">
-                        <a href="#"><img src="images/Logo.png" alt=""></a>
+                        <a href="index.php"><img src="images/Logo.png" alt=""></a>
                     </div>
                     <div class="bottom-header-menu">
                         <ul>
