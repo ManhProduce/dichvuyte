@@ -23,7 +23,8 @@
                 <select name="danhmucdv" id="">
                     <?php
                         // include("../../config/connect.php");
-                        $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+                        $conn= mysqli_connect('us-cdbr-east-06.cleardb.net','b60edb39847dd1','a07e85b1', 'heroku_b2701179edbbfe9');
+
                         mysqli_set_charset($conn,'utf8');
 
                         $db = new connection();

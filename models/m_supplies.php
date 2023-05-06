@@ -4,7 +4,7 @@
 
         #load category product
         public function load_category_pd(){
-            $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+            $conn= mysqli_connect('us-cdbr-east-06.cleardb.net','b60edb39847dd1','a07e85b1', 'heroku_b2701179edbbfe9');
             mysqli_set_charset($conn,'utf8');
 
             $db = new connection();
@@ -33,7 +33,8 @@
 
         #load product
         public function load_pd(){
-            $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+            $conn= mysqli_connect('us-cdbr-east-06.cleardb.net','b60edb39847dd1','a07e85b1', 'heroku_b2701179edbbfe9');
+
             mysqli_set_charset($conn,'utf8');
 
             $db = new connection();
@@ -75,7 +76,8 @@
 
         #fillter product
         public function fil_pd($id){
-            $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+            $conn= mysqli_connect('us-cdbr-east-06.cleardb.net','b60edb39847dd1','a07e85b1', 'heroku_b2701179edbbfe9');
+
             mysqli_set_charset($conn,'utf8');
 
             $db = new connection();
@@ -115,7 +117,8 @@
         }
         #load detail product
         public function load_detail_pd($id){
-            $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+            $conn= mysqli_connect('us-cdbr-east-06.cleardb.net','b60edb39847dd1','a07e85b1', 'heroku_b2701179edbbfe9');
+
             mysqli_set_charset($conn,'utf8');
 
             $db = new connection();
@@ -160,7 +163,8 @@
         }
         #load Technical Details
         public function load_detail_technical($id){
-            $conn= mysqli_connect('localhost','root','', 'mtmedicalservices');
+            $conn= mysqli_connect('us-cdbr-east-06.cleardb.net','b60edb39847dd1','a07e85b1', 'heroku_b2701179edbbfe9');
+
             mysqli_set_charset($conn,'utf8');
 
             $db = new connection();
