@@ -1,9 +1,9 @@
 <?php
     class connection{
-        private $servername = "localhost";
-        private $username = "root";
-        private $password = "";
-        private $db = "mtmedicalservices";
+        private $servername = "us-cdbr-east-06.cleardb.net";
+        private $username = "b60edb39847dd1";
+        private $password = "a07e85b1";
+        private $db = "heroku_b2701179edbbfe9";
         private $conn;
         
         // $mysqli = new mysqli("localhost","root","","mtmedicalservices");
