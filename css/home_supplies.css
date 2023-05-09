@@ -94,6 +94,7 @@ strong, b, .bold {
     display: inline-flex;
     text-align: center;
     margin-right: 12px;
+    align-items: center;
 }
 .breadcrumb-nav li::before {
     content: "";
@@ -104,7 +105,7 @@ strong, b, .bold {
     background-color: #8b9298;
     border-radius: 100%;
     /* text-align: center; */
-    margin-top: 3%;
+    /* margin-top: 3%; */
 }
 .breadcrumb-nav li:last-child::before {
     background-color: #1886eb;

@@ -41,12 +41,17 @@
             // }else{
             // }
             // echo $_SESSION['logincus'];
-            include_once("components/header.php");
+            if(isset($_GET['posts'])){
+                include_once("pages/post.php");
+            }else{
+                include_once("components/header.php");
+    
+    
+                include_once("components/banner.php");
+                include_once("components/body.php");
+                include_once("components/footer.php");
 
-
-            include_once("components/banner.php");
-            include_once("components/body.php");
-            include_once("components/footer.php");
+            }
         ?>
     </div>
     <script src="js/index.js"></script>
