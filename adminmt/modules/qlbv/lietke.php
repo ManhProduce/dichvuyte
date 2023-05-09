@@ -36,8 +36,8 @@
             <tr>
                 <td><?php echo $i ?></td>
                 <td><?php echo $row['name_post'] ?></td>
-                <td><?php echo $row['describe_post'] ?></td>
-                <td><?php echo $row['content_post'] ?></td>
+                <td ><?php echo $row['describe_post'] ?></td>
+                <td class="content-box"><?php echo $row['content_post'] ?></td>
                 <td>
                     <img style="width:150px;"src="modules/qlbv/uploads/<?php echo $row['image_post'] ?>" alt="">
                 </td>
