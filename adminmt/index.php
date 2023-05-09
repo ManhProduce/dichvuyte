@@ -56,6 +56,8 @@
         CKEDITOR.replace('tomtatsp');
         CKEDITOR.replace('motasp');
         CKEDITOR.replace('motadv');
+        CKEDITOR.replace('motabv');
+        CKEDITOR.replace('noidungbv');
     </script>
 </body>
 </html>

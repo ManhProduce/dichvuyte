@@ -96,7 +96,7 @@
                                 <div class="pd-item">
                                     <div class="pd-img">
                                         <a href="?idpd='.$id_pd.'">
-                                            <img src="../adminmt/modules/qlsp/uploads/'.$img_pd.'" alt="" style="width: 250px; height: 320px;">
+                                            <img src="../adminmt/modules/qlsp/uploads/'.$img_pd.'" alt="" style="width: 250px;">
                                         </a>
                                     </div>
                                     <p class="pd-title need-color">
