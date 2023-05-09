@@ -130,7 +130,7 @@
                         <p class="supplies-pd-menu-title">DANH MỤC</p>
                         <ul class="supplies-pd-menu-nav" id="supplies-pd-menu-nav">
                             <li class="supplies-pd-menu-item active">
-                                <a href="/mtmedicalservices/pages/supplies.php">
+                                <a href="/pages/supplies.php">
                                     <span class="title">Tất cả</span>
                                 </a>
                             </li>
