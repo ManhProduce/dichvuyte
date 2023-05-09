@@ -56,8 +56,8 @@
                 <td>
                     <a href="modules/qlbv/xuli.php?idxoabv=<?php echo $row['id_post'] ?>">Xóa</a> \ <a href="?action=qlbv&query=sua&idsuabv=<?php echo $row['id_post'] ?>">Sửa</a>
                 </td>
+                
             </tr>
-            <hr>
             <?php
                 }
             ?>

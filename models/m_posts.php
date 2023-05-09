@@ -89,7 +89,7 @@
                 $i = mysqli_num_rows($k);
                 if($i > 0){
                     while($row = mysqli_fetch_array($k)){
-                        $id_post = $row['id_category_post'];
+                        $id_post = $row['id_post'];
                         $name_post = $row['name_post'];
                         $img_post = $row['image_post'];
                         $des_post = $row['describe_post'];
@@ -97,7 +97,7 @@
                                 <div class="pd-item">
                                     <div class="pd-img">
                                         <a href="?idpost='.$id_post.'">
-                                            <img src="../adminmt/modules/qlsp/uploads/'.$img_post.'" alt="" style="width: 250px;">
+                                            <img src="../adminmt/modules/qlbv/uploads/'.$img_post.'" alt="" style="width: 250px;">
                                         </a>
                                     </div>
                                     <p class="pd-title need-color">
