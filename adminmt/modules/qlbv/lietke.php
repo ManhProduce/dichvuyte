@@ -39,7 +39,7 @@
                 <td ><?php echo $row['describe_post'] ?></td>
                 <td class="content-box"><?php echo $row['content_post'] ?></td>
                 <td>
-                    <img style="width:150px;"src="modules/qlbv/uploads/<?php echo $row['image_post'] ?>" alt="">
+                    <img style="width:150px;"src="<?php echo $row['image_post'] ?>" alt="">
                 </td>
                 <td><?php echo $row['name_cate_post'] ?></td>
                 <td>

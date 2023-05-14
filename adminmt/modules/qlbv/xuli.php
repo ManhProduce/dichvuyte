@@ -22,14 +22,19 @@
     if($db->connect($conn)){
         if(isset($_POST['thembv'])){
             //them danh muc bv
-            $sql_them = "INSERT INTO tb_post(name_post, describe_post, content_post, image_post, id_category_post, status_post ) 
-            VALUE ('".$tenbv."', '".$motabv."', '".$noidungbv."', '".$hinhanhbv_time."', '".$danhmucbv."', '".$tinhtrangbv."')";
-            mysqli_query($conn, $sql_them);
+            
             move_uploaded_file($hinhanhbv_tmp,'uploads/'.$hinhanhbv_time);
             //upload cloudinary
-            $result = \Cloudinary\Uploader::upload($hinhanhbv_tmp);
-            // echo "<img src='".$result['secure_url']."' />";
+            $result = \Cloudinary\Uploader::upload(realpath(dirname(__FILE__)."/uploads/".$hinhanhbv_time));
+            // session_start();
+            $imgcloud = $result['secure_url'];
 
+            $sql_them = "INSERT INTO tb_post(name_post, describe_post, content_post, image_post, id_category_post, status_post ) 
+            VALUE ('".$tenbv."', '".$motabv."', '".$noidungbv."', '".$imgcloud."', '".$danhmucbv."', '".$tinhtrangbv."')";
+            mysqli_query($conn, $sql_them);
+
+            
+            
             header('location: ../../index.php?action=qlbv&query=them');
         }elseif(isset($_POST['suabv'])){
             // sua bv
@@ -41,6 +46,7 @@
                 $sql = "SELECT * FROM tb_post WHERE id_post = '$_GET[idsuabv]' LIMIT 1";
                 $query = mysqli_query($conn, $sql);
                 while($rows = mysqli_fetch_array($query)){
+                    \Cloudinary\Uploader::destroy($rows['image_post']);
                     unlink('uploads/'.$rows['image_post']);
                 }
                 

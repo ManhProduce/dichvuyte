@@ -30,7 +30,7 @@
             <td>Hình ảnh:</td>
             <td>
                 <input type="file" name="hinhanhbv">
-                <img style="width:150px;"src="modules/qlbv/uploads/<?php echo $row['image_post'] ?>" alt="">
+                <img style="width:150px;"src="<?php echo $row['image_post'] ?>" alt="">
     
             </td>
         </tr>
