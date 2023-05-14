@@ -1,5 +1,5 @@
 <?php
-
+    require 'cloudinary.php';
     include("../../config/connect.php");
 
     $tenbv = $_POST['tenbv'];
@@ -26,6 +26,10 @@
             VALUE ('".$tenbv."', '".$motabv."', '".$noidungbv."', '".$hinhanhbv_time."', '".$danhmucbv."', '".$tinhtrangbv."')";
             mysqli_query($conn, $sql_them);
             move_uploaded_file($hinhanhbv_tmp,'uploads/'.$hinhanhbv_time);
+            //upload cloudinary
+            $result = \Cloudinary\Uploader::upload($hinhanhbv_tmp);
+            // echo "<img src='".$result['secure_url']."' />";
+
             header('location: ../../index.php?action=qlbv&query=them');
         }elseif(isset($_POST['suabv'])){
             // sua bv
