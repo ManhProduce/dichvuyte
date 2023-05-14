@@ -39,6 +39,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4G90ZMZ8T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N4G90ZMZ8T');
+    </script>
 	<meta charset="utf-8">
 	<title>Form-v5 by Colorlib</title>
 	<!-- Mobile Specific Metas -->
@@ -49,6 +58,7 @@
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="../css/register-style.css"/>
 </head>
+
 <body class="form-v5">
 	<div class="page-content">
 		<div class="form-v5-content">
