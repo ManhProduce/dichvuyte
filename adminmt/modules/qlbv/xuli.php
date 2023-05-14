@@ -1,5 +1,5 @@
 <?php
-    require 'cloudinary.php';
+    require ('../../../cloudinary.php');
     include("../../config/connect.php");
 
     $tenbv = $_POST['tenbv'];
