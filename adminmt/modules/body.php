@@ -48,6 +48,27 @@
             elseif($tam=='qldv' && $query=='sua'){
                 include("modules/qldv/sua.php");
             }
+
+            
+            elseif($tam=='qldanhmucbv' && $query=='them'){
+                include("modules/qldanhmucbv/them.php");
+                include("modules/qldanhmucbv/lietke.php");
+            }
+            elseif($tam=='qldanhmucbv' && $query=='sua'){
+                include("modules/qldanhmucbv/sua.php");
+            }
+            elseif($tam=='qldanhmucbv' && $query=='lietke'){
+                include("modules/qldanhmucbv/lietke.php");
+            }
+            elseif($tam=='qlbv' && $query=='them'){
+                include("modules/qlbv/them.php");
+                include("modules/qlbv/lietke.php");
+            }
+            elseif($tam=='qlbv' && $query=='sua'){
+                include("modules/qlbv/sua.php");
+            }
+
+
             elseif($tam=='qldh' && $query=='lietke'){
                 include("modules/qldonhang/lietke.php");
             }

@@ -70,6 +70,9 @@
                                 <a href="#"><p>Tin tức</p></a>
                             </li>
                             <li>
+                                <a href="post.php"><p>Bài viết</p></a>
+                            </li>
+                            <li>
                                 <a href="cart.php"><p>Giỏ hàng</p></a>
                             </li>
                             <li>
