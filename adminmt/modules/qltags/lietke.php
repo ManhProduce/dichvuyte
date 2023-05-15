@@ -6,33 +6,33 @@
     $db = new connection();
     $db->connect($conn); 
     if($db->connect($conn)){
-        $sql_lietke_danhmucdv = "SELECT * FROM tb_category_sv ORDER BY order_category_sv DESC";
-        $row_lietke_danhmucdv = mysqli_query($conn, $sql_lietke_danhmucdv);
+        $sql_lietke_tags = "SELECT * FROM tb_tags ORDER BY id_tags DESC";
+        $row_lietke_tags = mysqli_query($conn, $sql_lietke_tags);
     }else{
         return 0;
     }
     
 ?>
 
-<p>Liệt kê danh mục dịch vụ</p>
+<p>Liệt kê tags</p>
 
 <table border="1" width="50%" style="border-collapse: collapse;">
     <!-- <form action="modules/qldanhmucsp/xuli.php" method="POST"> -->
         <tr>
             <td>ID</td>
-            <td>Tên danh mục</td>
+            <td>Tên tags</td>
             <td>Quản lý</td>
         </tr>
             <?php
                 $i = 0;
-                while($row = mysqli_fetch_array($row_lietke_danhmucdv)){
+                while($row = mysqli_fetch_array($row_lietke_tags)){
                     $i++
             ?>
             <tr>
                 <td><?php echo $i ?></td>
-                <td><?php echo $row['name_category_sv'] ?></td>
+                <td><?php echo $row['name_tags'] ?></td>
                 <td>
-                    <a href="modules/qldanhmucdv/xuli.php?idxoadanhmucdv=<?php echo $row['id_category_sv'] ?>">Xóa</a> \ <a href="?action=qldanhmucdv&query=sua&idsuadanhmucdv=<?php echo $row['id_category_sv'] ?>">Sửa</a>
+                    <a href="modules/qltags/xuli.php?idxoatags=<?php echo $row['id_tags'] ?>">Xóa</a> \ <a href="?action=qltags&query=sua&idsuatags=<?php echo $row['id_tags'] ?>">Sửa</a>
                 </td>
             </tr>
             <?php

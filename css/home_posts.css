@@ -309,3 +309,17 @@ strong, b, .bold {
     line-clamp: 4;
     -webkit-box-orient: vertical;
 }
+.list-tags {
+    display: flex;
+    list-style-type: none;
+}
+.title-tags {
+    margin-right: 15px !important;
+}
+.tag-item {
+    padding: 10px;
+    border-radius: 4px ;
+    margin-right: 5px;
+    text-align: center;
+    background-color: #dbdbdb;
+}

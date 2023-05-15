@@ -34,6 +34,15 @@
             elseif($tam=='qldanhmucdv' && $query=='sua'){
                 include("modules/qldanhmucdv/sua.php");
             }
+
+            elseif($tam=='qltags'&& $query=='them'){
+                include("modules/qltags/them.php");
+                include("modules/qltags/lietke.php");
+            }
+            elseif($tam=='qltags' && $query=='sua'){
+                include("modules/qltags/sua.php");
+            }
+
             elseif($tam=='qlsp' && $query=='them'){
                 include("modules/qlsp/them.php");
                 include("modules/qlsp/lietke.php");

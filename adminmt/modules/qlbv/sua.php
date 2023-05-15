@@ -27,10 +27,10 @@
             <td><input type="text" value="<?php echo $row['name_post']; ?>" name="tenbv"></td>
         </tr>
         <tr>
-            <td>Hình ảnh:</td>
+            <td>Hình ảnh 1:</td>
             <td>
-                <input type="file" name="hinhanhbv">
-                <img style="width:150px;"src="<?php echo $row['image_post'] ?>" alt="">
+                <input type="file" name="hinhanhbv1">
+                <img style="width:150px;"src="<?php echo $row['image_post1'] ?>" alt="">
     
             </td>
         </tr>
@@ -39,8 +39,114 @@
             <td><textarea type="text" rows="10" name="motabv" value=""><?php echo $row['describe_post'] ?></textarea></td>
         </tr>
         <tr>
+            <td>Hình ảnh 2:</td>
+            <td>
+                <input type="file" name="hinhanhbv2">
+                <img style="width:150px;"src="<?php echo $row['image_post2'] ?>" alt="">
+    
+            </td>
+        </tr>
+        <tr>
+            <td>Hình ảnh 3:</td>
+            <td>
+                <input type="file" name="hinhanhbv3">
+                <img style="width:150px;"src="<?php echo $row['image_post3'] ?>" alt="">
+    
+            </td>
+        </tr>
+        <tr>
             <td>Nội dung:</td>
             <td><textarea type="text" rows="10" name="noidungbv" value=""><?php echo $row['content_post'] ?></textarea></td>
+        </tr>
+        <tr>
+            <td>Tags 1:</td>
+            <td>
+                <select name="tag1" id="">
+                    <?php
+                            $sql_tags = "SELECT * FROM tb_tags ORDER BY id_tags DESC";
+                            $query_tags = mysqli_query($conn, $sql_tags);
+                            while($row_tags = mysqli_fetch_array($query_tags)){
+                                if($row_tags['id_tags']==$row['id_tags1']){
+
+                                
+                                ?>
+                                <option selected value="<?php echo $row_tags['id_tags'] ?>"><?php echo $row_tags['name_tags'] ?></option>
+
+                                <?php
+                                }else{
+                                ?>
+                                <option  value="<?php echo $row_tags['id_tags'] ?>"><?php echo $row_tags['name_tags'] ?></option>
+                                
+                                <?php
+                                }
+                            }
+                        // }else{
+                        //     return 0;
+                        // }
+                        
+                    ?>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tags 2:</td>
+            <td>
+                <select name="tag2" id="">
+                    <?php
+                            $sql_tags = "SELECT * FROM tb_tags ORDER BY id_tags DESC";
+                            $query_tags = mysqli_query($conn, $sql_tags);
+                            while($row_tags = mysqli_fetch_array($query_tags)){
+                                if($row_tags['id_tags']==$row['id_tags2']){
+
+                                
+                                ?>
+                                <option selected value="<?php echo $row_tags['id_tags'] ?>"><?php echo $row_tags['name_tags'] ?></option>
+
+                                <?php
+                                }else{
+                                ?>
+                                <option  value="<?php echo $row_tags['id_tags'] ?>"><?php echo $row_tags['name_tags'] ?></option>
+                                
+                                <?php
+                                }
+                            }
+                        // }else{
+                        //     return 0;
+                        // }
+                        
+                    ?>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tags 3:</td>
+            <td>
+                <select name="tag3" id="">
+                    <?php
+                            $sql_tags = "SELECT * FROM tb_tags ORDER BY id_tags DESC";
+                            $query_tags = mysqli_query($conn, $sql_tags);
+                            while($row_tags = mysqli_fetch_array($query_tags)){
+                                if($row_tags['id_tags']==$row['id_tags3']){
+
+                                
+                                ?>
+                                <option selected value="<?php echo $row_tags['id_tags'] ?>"><?php echo $row_tags['name_tags'] ?></option>
+
+                                <?php
+                                }else{
+                                ?>
+                                <option  value="<?php echo $row_tags['id_tags'] ?>"><?php echo $row_tags['name_tags'] ?></option>
+                                
+                                <?php
+                                }
+                            }
+                        // }else{
+                        //     return 0;
+                        // }
+                        
+                    ?>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>Danh mục bài viết:</td>
@@ -82,7 +188,7 @@
         <tr>
             <td>Tình trạng:</td>
             <td>
-                <select value=<?php $row['status_post']; ?> name="tinhtrangbv" id="">
+                <select value="<?php $row['status_post']; ?>" name="tinhtrangbv" id="">
                     <?php
                         
                         if($row['status_post'] ==0){

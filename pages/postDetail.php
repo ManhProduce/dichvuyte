@@ -52,6 +52,23 @@
                 ?>
                 
             </div>
+            <div class="post-detail-tags">
+                
+                <ul class="list-tags">
+                    <li class="tag-item title-tags" >Tags:</li>
+                    <?php
+                        if(isset($_REQUEST['idpost'])){
+                            $id = $_REQUEST['idpost'];
+                            include_once("../models/m_posts.php");
+                            $p = new posts();
+                            $p->load_tags($id);
+
+                        }else{
+                            echo' ';
+                        }
+                    ?>
+                </ul>
+            </div>
         </div>
     </div>
 
