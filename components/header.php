@@ -7,7 +7,7 @@
                     <p class="open-hour">Giờ làm việc: Thứ Hai - Thứ Sáu: 8:00 - 16:30 - Thứ Bảy: 8:00 - 11:30</p>
                     <ul class="social-nav">
                         <li class="social-nav-item">
-                            <a href="#" class="social-nav-item-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100092352120090" class="social-nav-item-link"><i class="fa-brands fa-facebook"></i></a>
                         </li>
                         <li class="social-nav-item">
                             <a href="#" class="social-nav-item-link"><i class="fa-brands fa-google-plus-g"></i></a>
