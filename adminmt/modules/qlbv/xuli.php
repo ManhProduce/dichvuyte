@@ -396,7 +396,6 @@
             }else{
                 $sql_sua = "UPDATE tb_post SET name_post='".$tenbv."', describe_post='".$motabv."', content_post='".$noidungbv."', id_tags1='".$tag1."', id_tags2='".$tag2."', id_tags3='".$tag3."', id_category_post='".$danhmucbv."', status_post='".$tinhtrangbv."' WHERE id_post = '$_GET[idsuabv]'";
                 mysqli_query($conn, $sql_sua);
-                echo'';
             }
             header('location: ../../index.php?action=qlbv&query=them');
         }
