@@ -94,13 +94,13 @@
                         </div>
                         <div class="column home-search-right " id="go-left">
                             <div class="home-search-product-info-right animation-left movleft">
-                                <p class="home-search-product-info-right-title">TÌM SẢN PHẨM</p>
+                                <p class="home-search-product-info-right-title">ĐĂNG KÝ NHẬN TIN</p>
                                 <form action="POST">
                                     <div class="home-search-product-icon">
-                                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        <button type="submit" name="dktin"><i class="fa-solid fa-magnifying-glass"></i></button>
                                     </div>
                                     <div class="home-search-product-input">
-                                        <input type="text" placeholder="SEARCH YOUR PRODUCT">
+                                        <input type="text" placeholder="Nhập email của bạn...">
                                     </div>
                                 </form>
                             </div>
