@@ -169,11 +169,13 @@
                                 <h2 class="title-post">
                                     '.$name_post.'
                                 </h2>
-                                <div class="image-banner">
-                                    <img src="'.$img_post2.'" alt="" style="height: 500px">
-                                </div>
-                                <div class="image-banner">
-                                    <img src="'.$img_post3.'" alt="" style="height: 500px">
+                                <div class="img-banner" style="height:500px">
+                                    <div class="image-banner">
+                                        <img src="'.$img_post2.'" alt="" style="height:500px">
+                                    </div>
+                                    <div class="image-banner">
+                                        <img src="'.$img_post3.'" alt="" style="height:500px">
+                                    </div>
                                 </div>
                                 <div class="body-post">
                                     <p>'.$content_post.'</p>

@@ -246,6 +246,7 @@ strong, b, .bold {
 }
 .image-banner {
     text-align: center;
+    margin: auto;
 }
 .supplies-product-right {
     width: 75%;
@@ -322,4 +323,9 @@ strong, b, .bold {
     margin-right: 5px;
     text-align: center;
     background-color: #dbdbdb;
+}
+
+.img-banner{
+    display: flex;
+
 }

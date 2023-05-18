@@ -95,14 +95,28 @@
                         <div class="column home-search-right " id="go-left">
                             <div class="home-search-product-info-right animation-left movleft">
                                 <p class="home-search-product-info-right-title">ĐĂNG KÝ NHẬN TIN</p>
-                                <form action="POST">
+                                <form action="" method="POST">
                                     <div class="home-search-product-icon">
-                                        <button type="submit" name="dktin"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        <button type="submit" name="dktin"><i class="fa-regular fa-flag"></i></button>
                                     </div>
                                     <div class="home-search-product-input">
-                                        <input type="text" placeholder="Nhập email của bạn...">
+                                        <input type="text" name="emailregister" placeholder="Nhập email của bạn...">
                                     </div>
                                 </form>
+                                <?php
+                                    if(isset($_POST['dktin'])){
+                                        $email = $_POST['emailregister'];
+                                        include_once("models/m_customers.php");
+                                        $p = new customers();
+                                        if($p->validate_email_notice($email)){
+                                            $p->insert_email_notice();
+                                        }else{
+                                            echo"<script type='text/javascript'>
+                                                    alert('Vui lòng nhập đúng email !!!');
+                                                </script>";
+                                        }
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>

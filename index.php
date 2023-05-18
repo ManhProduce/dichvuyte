@@ -12,6 +12,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="http://localhost/mtmedicalservices/">
+    <!-- <base href="http://mtmedicalservices.herokuapp.com/"> -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4G90ZMZ8T"></script>
     <script>
@@ -36,7 +38,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--  -->
     <!-- link font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--  -->
     <!-- link swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />

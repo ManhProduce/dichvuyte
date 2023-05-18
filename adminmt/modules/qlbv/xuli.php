@@ -405,37 +405,31 @@
             $query = mysqli_query($conn, $sql);
             while($rows = mysqli_fetch_array($query)){
 
-                if($rows['image_post3']==''){
+                if($rows['image_post1']!=''){
                     //1
                     $path1 = parse_url($rows['image_post1'], PHP_URL_PATH);
                     $fileInfo1 = pathinfo($path1);
                     $publicId1 = $fileInfo1['filename'];
+    
+                    \Cloudinary\Uploader::destroy($publicId1);
+                }
+                if($rows['image_post2']!=''){
                     //2
                     $path2 = parse_url($rows['image_post2'], PHP_URL_PATH);
                     $fileInfo2 = pathinfo($path2);
                     $publicId2 = $fileInfo2['filename'];
     
-                    \Cloudinary\Uploader::destroy($publicId1);
                     \Cloudinary\Uploader::destroy($publicId2);
-                    
-                }else{
-                    //1
-                    $path1 = parse_url($rows['image_post1'], PHP_URL_PATH);
-                    $fileInfo1 = pathinfo($path1);
-                    $publicId1 = $fileInfo1['filename'];
-                    //2
-                    $path2 = parse_url($rows['image_post2'], PHP_URL_PATH);
-                    $fileInfo2 = pathinfo($path2);
-                    $publicId2 = $fileInfo2['filename'];
+                }
+                if($rows['image_post3']!=''){
                     //3
                     $path3 = parse_url($rows['image_post3'], PHP_URL_PATH);
                     $fileInfo3 = pathinfo($path3);
                     $publicId3 = $fileInfo3['filename'];
     
-                    \Cloudinary\Uploader::destroy($publicId1);
-                    \Cloudinary\Uploader::destroy($publicId2);
                     \Cloudinary\Uploader::destroy($publicId3);
                 }
+                
                 
             }
             $sql_xoabv = "DELETE FROM tb_post WHERE id_post = '".$idxoabv."'";
